@@ -1,0 +1,129 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title></title>
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700'
+    rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfRKEJEPx5SSh5o2UwwZb9XA2avQrZvNg">
+    </script>
+    <script src="js/libs/modernizr-2.7.1.min.js"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column half">
+            <h1>Drivers</h1>
+            <br />
+            <form id="drivers">
+                <div>
+                    First Person: <br>
+                    <input type="text" class="pn" placeholder="Name">
+                    <input type="text" class="pl" placeholder="Location">
+                    <br>
+                </div>
+                <div>
+                    Second Person:<br>
+                    <input type="text" class="pn" placeholder="Name">
+                    <input type="text" class="pl" placeholder="Location">
+                    <br>
+                </div>
+                <div>
+                    Third Person:<br>
+                    <input type="text" class="pn" placeholder="Name">
+                    <input type="text" class="pl" placeholder="Location">
+                    <br>
+                </div>
+            </form>
+            <form>
+            Hangout Location:<br>
+                <input type="text" class="hl">
+                <br>
+                <br>
+                <div>
+                    <a id="pickup" href="#">Calculate Pickup</a>
+                </div>
+                <div>
+                    <a id="dropoff" href="#">Calculate Dropoff</a>
+                </div>
+            </form>
+        </div>
+        <div class="column half">
+            <h1>Passengers</h1>
+            <br>
+            <form id="passengers">
+                <div>
+                    First Person: <br>
+                    <input type="text" class="pn" placeholder="Name">
+                    <input type="text" class="pl" placeholder="Location">
+                    <br />
+                </div>
+                <div>
+                    Second Person:<br>
+                    <input type="text" class="pn" placeholder="Name">
+                    <input type="text" class="pl" placeholder="Location">
+                    <br>
+                </div>
+                <div>
+                    Third Person:<br>
+                    <input type="text" class="pn" placeholder="Name">
+                    <input type="text" class="pl" placeholder="Location">
+                    <br>
+                </div>
+                <div>
+                    Fourth Person:<br>
+                    <input type="text" class="pn" placeholder="Name">
+                    <input type="text" class="pl" placeholder="Location">
+                    <br>
+                </div>
+                <div>
+                    Fifth Person:<br>
+                    <input type="text" class="pn" placeholder="Name">
+                    <input type="text" class="pl" placeholder="Location">
+                    <br>
+                </div>
+                <div>
+                    Sixth Person:<br>
+                    <input type="text" class="pn" placeholder="Name">
+                    <input type="text" class="pl" placeholder="Location">
+                    <br>
+                </div>
+                <div>
+                    Seventh Person:<br>
+                    <input type="text" class="pn" placeholder="Name">
+                    <input type="text" class="pl" placeholder="Location">
+                    <br>
+                </div>
+            </form>
+        </div>
+    </div>
+   
+    <div class="row">
+        <h1>Results</h1>
+        <div id="outputDiv"></div>
+        <br />
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.11.0.min.js"><\/script>')</script>
+
+    <script src="js/script.js"></script>
+
+    <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+    <![endif]-->
+
+</body>
+</html>

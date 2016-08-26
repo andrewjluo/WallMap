@@ -1,0 +1,54 @@
+/* AdamKaplanGrid
+ * ==|== kaplangrid.css ==========================================================
+ */
+
+/* Small screens (default) */
+html { font-size: 100%; }
+
+/* Medium screens (640px) */
+@media (min-width: 40rem) {
+  html { font-size: 112%; }
+}
+
+/* Large screens (1024px) */
+@media (min-width: 64rem) {
+  html { font-size: 120%; }
+}
+
+@media (min-width: 40rem) {
+  .column {
+    border:0px;
+    margin:0px;
+    padding:0px;
+    border-image: 0px;
+    float: left;
+  }
+  
+  .column.full { width: 100%; }
+  .column.two-thirds { width: 66.7%; }
+  .column.half { width: 50%; }
+  .column.third { width: 33.3%; }
+  .column.fourth { width: 25%; }
+  .column.flow-opposite { float: right; }
+}
+
+//Add to columns where you want content to display first on mobile,
+//but to appear on the right on larger screens
+@media (min-width: 40rem) {
+  .column.flow-opposite { float: right; }
+}
+
+//Weird clearfixing stuff
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}

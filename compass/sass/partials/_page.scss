@@ -1,0 +1,34 @@
+/* Styling for Page
+ * ==|== page.scss ==========================================================
+ *///Page Styling
+
+.page.half_page {
+	height: 50vh;
+}
+.page {
+	height:100vh;
+}
+
+.page.intro{
+	background-size: cover;
+	background: url('../img/tower_edited.jpg') top right no-repeat;
+	opacity: 0.6;
+}
+
+.page.about {
+	background-size: cover;
+	background: url('../img/qr_edited.jpg') bottom right no-repeat;
+	opacity: 0.6;
+}
+
+.page.expertise {
+	background-size: cover;
+}
+
+.tint {
+	background: black;
+}
+
+.tint_white {
+	background: white;
+}

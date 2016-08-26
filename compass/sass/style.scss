@@ -1,0 +1,25 @@
+// CSS normalize.css reset
+@import "modules/normalize";
+// See modules/_base.scss
+@import "modules/base";
+@import "partials/reset";
+@import "partials/kaplangrid";
+@import "partials/ie";
+@import "partials/page";
+
+body {
+    @include typeface;
+    width: 100%;
+}
+
+form {
+	padding: 20px;
+}
+
+div {
+	padding: 20px;
+}
+
+h1 {
+	font-weight: bold;
+}
